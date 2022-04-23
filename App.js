@@ -1,11 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Logo from './Logo'; 
+import LogoImage from './LogoImage'; 
+import { Button } from 'react-native-paper';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>hi</Text>
       <StatusBar style="auto" />
+      <Logo></Logo>
+      <LogoImage></LogoImage>
+      <Button onTouchEnd={() =>{
+        console.log("Pressed button")
+      }}>Paper button</Button>
     </View>
   );
 }
@@ -18,3 +26,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
